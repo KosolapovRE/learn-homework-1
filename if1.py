@@ -19,7 +19,18 @@ def main():
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    pass
+    user_age = input('Сколько Вам лет?')
+def user_must_have (user_age):
+    user_age = abs(int(user_age))
+    if user_age > 90:
+        raise ValueError('Максимальный возраст не может быть больше 90 лет')
+    if user_age < 18:
+        raise ValueError('До 18 лет тебя не возьмут официально на работу')
+    if 25 >= user_age >= 18:
+        print('Ты должен учиться в ВУЗе!')
+    
+
+
 
 if __name__ == "__main__":
     main()
