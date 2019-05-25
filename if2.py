@@ -24,7 +24,7 @@ def main():
         if len(first_str) != len(second_str):
             print(3)
         else:
-            print('Одинаковые строки!')
+            print(1)
     else:
             if len(first_str) == len(second_str):
                 print(1)
