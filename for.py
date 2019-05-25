@@ -15,7 +15,13 @@ def main():
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    pass
+    school_grades = [
+    {'school_class': '1a', 'scores': [3, 4, 4, 2, 3, 5, 3, 2, 5]}, 
+    {'school_class': '1b', 'scores': [5, 5, 4, 4, 3, 4, 5]}, 
+    {'school_class': '2b', 'scores': [3, 3, 3, 2, 5]}
+    ]
+    for grade in school_grades:
+        pass
     
 if __name__ == "__main__":
     main()
