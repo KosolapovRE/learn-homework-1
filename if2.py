@@ -18,7 +18,8 @@
 def main():
     first_str = input('Напишите что нибудь - ')
     second_str = input('Напишите еще что нибудь - ')
-    
+    first_str = first_str.lower().replace(' ', '')
+    second_str = second_str.lower().replace(' ', '')
     if second_str =='learn':
         if len(first_str) != len(second_str):
             print(3)
