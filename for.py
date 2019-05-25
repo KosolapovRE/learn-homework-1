@@ -20,8 +20,20 @@ def main():
     {'school_class': '1b', 'scores': [5, 5, 4, 4, 3, 4, 5]}, 
     {'school_class': '2b', 'scores': [3, 3, 3, 2, 5]}
     ]
-    for grade in school_grades:
-        pass
+    scores_1a = school_grades[0]['scores'] 
+    total = 0
+    for element in scores_1a:
+        total += element
+    average_score = total / len(scores_1a)
+    print(average_score)
+    scores_1b = school_grades[1]['scores']
+    total = 0
+    for element in scores_1b:
+        total += element
+    average_score = total / len(scores_1b)
+    print(scores_1b)
+        
+    pass
     
 if __name__ == "__main__":
     main()
