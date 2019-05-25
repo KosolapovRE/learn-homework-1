@@ -16,13 +16,29 @@
 """
 
 def main():
-    a = input('Напишите что нибудь - ')
-    b = input('Напишите еще что нибудь - ')
-    def compare_str(a, b):
-        x = str(a + b)
-        print(x)  
+    first_str = input('Напишите что нибудь - ')
+    second_str = input('Напишите еще что нибудь - ')
+    
+    if second_str =='learn':
+        if len(first_str) != len(second_str):
+            print(3)
+        else:
+            print('Одинаковые строки!')
+    else:
+            if len(first_str) == len(second_str):
+                print(1)
+            else:
+                if len(first_str) > len(second_str):
+                    print(2)
+                else:
+                    print('Вторая строка больше первой!')
+    
         
             
+        
+        
+  
+
     
 if __name__ == "__main__":
     main()
