@@ -12,7 +12,6 @@
 * Если строки разные и вторая строка 'learn', возвращает 3
 * Вызвать функцию несколько раз, передавая ей разные праметры 
   и выводя на экран результаты
-
 """
 
 def main():
@@ -26,20 +25,14 @@ def main():
         else:
             print(1)
     else:
-            if len(first_str) == len(second_str):
-                print(1)
+        if len(first_str) == len(second_str):
+            print(1)
+        else:
+            if len(first_str) > len(second_str):
+                print(2)
             else:
-                if len(first_str) > len(second_str):
-                    print(2)
-                else:
-                    print('Вторая строка больше первой!')
-    
-        
-            
-        
-        
-  
+                print('Вторая строка больше первой!')
 
-    
+   
 if __name__ == "__main__":
     main()
