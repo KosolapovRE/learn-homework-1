@@ -1,13 +1,14 @@
 from datetime import date, timedelta
 import locale
 locale.setlocale(locale.LC_ALL, 'ru_RU')
+from dateutil.relativedelta import relativedelta
 
 dt_today = date.today()
 print(dt_today)
 delta = timedelta(days = 1)
 dt_yesterday = dt_today - delta
 print(dt_yesterday)
-dt_month_later = dt_today - timedelta(30)
+dt_month_later = dt_today - relativedelta(months=1)
 print(dt_month_later)
 
 from datetime import datetime
