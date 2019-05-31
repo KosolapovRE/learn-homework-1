@@ -1,9 +1,3 @@
-
-def main():
-    if __name__ == "__main__": 
-        main()
-
-
 years = input('Привет дорогой друг, напиши свой возраст и я угадаю, чем ты занимаешься!')
 def what_you_do(years):
     try:
