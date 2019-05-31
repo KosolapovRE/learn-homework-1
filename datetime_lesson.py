@@ -1,6 +1,6 @@
 from datetime import date, timedelta
 import locale
-locale.setlocale(locale.LC_ALL, "russian")
+locale.setlocale(locale.LC_ALL, 'ru_RU')
 
 dt_today = date.today()
 print(dt_today)
@@ -14,3 +14,4 @@ from datetime import datetime
 dt_str = "01/01/17 12:10:03.234567"
 dt_new = datetime.strptime(dt_str, '%m/%d/%y %H:%M:%S.%f')
 print(dt_new)
+print(dt_new.strftime('%A %d %B %Y'))
