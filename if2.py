@@ -17,9 +17,7 @@
 first_str = input('Напишите что нибудь - ')
 second_str = input('Напишите еще что нибудь - ')
 
-def main(first_str, second_str):
-    first_str = first_str.lower().replace(' ', '')
-    second_str = second_str.lower().replace(' ', '')
+def compare_string(first_str, second_str):
     if second_str =='learn':
         if len(first_str) != len(second_str):
             return '3'
@@ -33,6 +31,8 @@ def main(first_str, second_str):
                 return '2'
             else:
                 return 'Вторая строка больше первой!'
+        
 
-   
+answer = compare_string(first_str, second_str)
+print(answer)
 
