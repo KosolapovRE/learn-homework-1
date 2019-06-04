@@ -18,12 +18,15 @@ robot_talk = {
     }
 
 def ask_user():
-    while True:
-        question = input('Что ты хочешь спросить?')
-        if question == 'Хватит':
-            break
-        else:
-            print(robot_talk.get(question, 'В ответах я ограничен, правильно задавай вопросы!'))
+    try: 
+        while True:
+            question = input('Что ты хочешь спросить?')
+            if question == 'Хватит':
+                break
+            else:
+                print(robot_talk.get(question, 'В ответах я ограничен, правильно задавай вопросы!'))
+    except KeyboardInterrupt:
+        print('Пока!')
     
-if __name__ == "__main__":
-    ask_user()
+                   
+ask_user()
