@@ -13,12 +13,12 @@
 """
 
 def get_summ(num_one, num_two):
+    summ_one_two = None
     try:
         summ_one_two = int(num_one) + int(num_two)
     except ValueError:
         return 'Функция принимает только числа!'
-    else:
-        return summ_one_two
+    return summ_one_two
     
 
 if __name__ == "__main__":
